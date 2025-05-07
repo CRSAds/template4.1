@@ -1,63 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
-  background: linear-gradient(to bottom, #e0e0e0, #cfcfcf);
+  background: linear-gradient(to bottom, #dcdde1, #ced6e0);
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px 10px;
 }
 
 .step-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
-}
-
-.hidden {
-  display: none;
+  max-width: 480px;
+  margin: 0 auto;
 }
 
 .card {
-  background-color: white;
+  background: #fff;
   border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-  width: 350px;
-  text-align: center;
-  padding-bottom: 24px;
-}
-
-.bike-image {
-  width: 100%;
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  padding: 24px;
+  margin-top: 20px;
 }
 
 .card-content {
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 h1, h2 {
-  font-size: 1.3em;
-  margin-bottom: 10px;
+  font-size: 1.3rem;
+  margin: 0;
 }
 
 p {
-  font-size: 0.95em;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
   color: #333;
-  line-height: 1.5;
 }
 
 button {
   background-color: #0026ff;
   color: white;
   border: none;
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-size: 1em;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 1rem;
   cursor: pointer;
-  margin-top: 20px;
+  width: 100%;
 }
 
 button:hover:enabled {
@@ -65,33 +61,112 @@ button:hover:enabled {
 }
 
 button:disabled {
-  background-color: #ddd;
-  color: #999;
+  background-color: #ccc;
+  color: #888;
   cursor: not-allowed;
+}
+
+.bike-image {
+  width: 100%;
+  border-radius: 12px;
 }
 
 .checkbox-label {
   display: flex;
   align-items: center;
-  gap: 12px;
-  border: 2px solid #ccc;
-  border-radius: 8px;
-  padding: 10px;
-  margin: 20px 0;
-  cursor: pointer;
+  gap: 10px;
 }
 
-.checkbox-label input[type="checkbox"] {
+input[type="checkbox"],
+input[type="radio"] {
   width: 20px;
   height: 20px;
 }
 
-.checkbox-label span {
-  font-size: 0.9em;
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="tel"],
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
 }
 
-a {
-  color: #0026ff;
-  text-decoration: underline;
+label {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+select {
+  background: white;
+}
+
+.option-button {
+  background-color: #0026ff;
+  color: white;
+  padding: 14px;
+  margin: 8px 0;
+  border-radius: 8px;
+  font-size: 1rem;
   cursor: pointer;
+  border: none;
+  width: 100%;
+}
+
+.option-button:hover {
+  background-color: #0019c9;
+}
+
+.form-section {
+  background: #f7f8fc;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.form-row {
+  display: flex;
+  gap: 8px;
+}
+
+.form-row input {
+  flex: 1;
+}
+
+.radio-group {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.progress-header {
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progress-bar {
+  margin-top: 8px;
+  height: 6px;
+  background-color: #eee;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #f39c12;
+  transition: width 0.3s ease;
+}
+
+small {
+  font-size: 0.8rem;
+  color: #555;
+  display: block;
+  margin-top: 10px;
 }
