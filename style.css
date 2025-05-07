@@ -155,13 +155,14 @@ select {
 
 .form-row input {
   flex: 1;
+  min-width: 0;
+  max-width: 100px;
   padding: 14px;
   text-align: center;
   border: 1px solid #bbb;
   border-radius: 8px;
   font-size: 1rem;
 }
-
 .radio-group {
   display: flex;
   gap: 16px;
