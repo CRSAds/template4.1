@@ -129,13 +129,13 @@ select {
 .form-row {
   display: flex;
   justify-content: space-between;
-  gap: 8px;
-  margin-top: 8px;
+  gap: 15px;
+  margin-top: 15px;
 }
 
 .form-row input {
   width: 100%;
-  max-width: 80px;
+  max-width: 120px;
   text-align: center;
   padding: 12px;
   border: 1px solid #ccc;
