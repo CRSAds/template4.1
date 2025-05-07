@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Win een E-bike</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Stap 1 -->
+  <div class="step-container" id="step-1">
+    <div class="card">
+      <img id="step1-image" src="" alt="Fiets" class="bike-image" />
+      <div class="card-content">
+        <h1 id="step1-title"></h1>
+        <p id="step1-desc"></p>
+        <button id="nextBtn">...</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stap 2 -->
+  <div class="step-container hidden" id="step-2">
+    <div class="card">
+      <div class="card-content">
+        <h2 id="step2-title"></h2>
+        <p id="step2-content"></p>
+        <label class="checkbox-label">
+          <input type="checkbox" id="termsCheck" />
+          <span id="termsLabel"></span>
+        </label>
+        <button id="proceedBtn" disabled>...</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="content.js"></script>
+  <script src="custom.js"></script>
+</body>
+</html>
