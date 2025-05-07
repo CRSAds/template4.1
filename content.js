@@ -1,7 +1,7 @@
 window.campaignContent = {
   step1: {
     title: "Win een E-bike 🎉",
-    image: "assets/fiets.jpg",
+    image: "gazelle-ebike-header-4-1.png",
     description: `Nederland staat met 22 miljoen fietsen wereldwijd bekend als hét ultieme fietsland. Fiets jij graag? Beantwoord een paar vragen en maak kans op een nieuwe Gazelle E-bike!`,
     buttonText: "Ga Verder"
   },
